@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Lexend+Exa:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply scroll-smooth;
+}
+
+h3 {
+  @apply text-2xl font-bold;
+}
+
+@layer components {
+  .card {
+    @apply bg-white rounded-lg;
+  }
+
+  .link {
+    @apply hover:text-gray-300 transition-all duration-150;
+  }
+
+  .photo-info {
+    @apply flex items-center;
+  }
+}
