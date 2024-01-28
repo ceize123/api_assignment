@@ -12,7 +12,7 @@ export default {
     extend: {
       colors: {
         'mars-primary': '#EE3108',
-        'mars-secondary': '#100E1D',
+        'mars-secondary': '#10051F',
         navbar: '#030303',
       },
     },

@@ -6,7 +6,7 @@
         class="h-screen w-screen flex flex-col justify-center items-center bg-black z-20 fixed top-0 left-0 overflow-hidden"
       >
         <div class="animate-[bounce_7s_infinite]">
-          <NuxtImg src="/img/astronaut.png" alt="astronaut" />
+          <NuxtImg src="/img/astronaut.png" width="200px" alt="astronaut" />
         </div>
         <div class="loader bg-white p-2 rounded-full flex space-x-3">
           <div
