@@ -1,6 +1,6 @@
 <template>
   <BaseModal :modalActive="modalActive" @close-modal="$emit('close-modal')">
-    <div class="max-w-4/5 max-h-[90vh] overflow-y-auto font-Lexend">
+    <div class="max-w-4/5 max-h-[88vh] overflow-y-auto font-Lexend">
       <div>
         <NuxtImg
           class="max-h-[65vh]"
@@ -12,7 +12,7 @@
       </div>
       <div class="mt-5">
         <NuxtImg src="/img/arrows.png" alt="arrows" class="w-20" />
-        <div class="mt-5 px-2 [&>div]:photo-info [&_h2]:mr-3 [&_p]:text-xl">
+        <div class="mt-5 px-2 [&>div]:photo-info [&_h2]:mr-3 [&_p]:md:text-xl">
           <div>
             <h2>Camera:</h2>
             <p>{{ photo.camera.full_name }}</p>
