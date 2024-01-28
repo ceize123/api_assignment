@@ -1,4 +1,5 @@
 <template>
+  <!-- Custom Error Page -->
   <div
     class="mt-10 sm:max-w-md max-w-sm mx-auto text-center card p-4 [&>p]:md:mt-7 [&>p]:mt-3"
   >

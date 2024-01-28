@@ -55,7 +55,7 @@ const getBottom = (bottom) => {
   return window.innerHeight + window.scrollY > bottom;
 };
 
-//   if window is at the bottom already when onMounted, fetch more photos
+// if window is at the bottom already when onMounted, fetch more photos
 const checkOnMountedHeight = () => {
   const bottom = lastPhoto.element
     ? lastPhoto.element.getBoundingClientRect().bottom
