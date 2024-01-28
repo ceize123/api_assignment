@@ -25,7 +25,7 @@
       <div>
         <NuxtLink
           to="#gallery"
-          class="absolute md:bottom-[15vh] bottom-[50vh] md:right-[10vw] right-0 md:left-auto left-0 md:mx-0 mx-auto md:w-auto w-64 text-center cursor-pointer"
+          class="absolute md:bottom-[15vh] bottom-[45vh] md:right-[10vw] right-0 md:left-auto left-0 md:mx-0 mx-auto md:w-auto w-64 text-center cursor-pointer"
         >
           <div class="relative flex justify-center items-center group">
             <h2 class="relative z-10">Gallery</h2>
