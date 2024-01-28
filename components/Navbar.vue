@@ -1,6 +1,6 @@
 <template>
   <header
-    class="shadow-sm bg-navbar fixed top-0 w-screen z-10 text-mars-primary"
+    class="shadow-sm bg-navbar fixed top-0 w-screen z-20 text-mars-primary"
   >
     <nav class="container mx-auto py-4 px-8 flex justify-between items-center">
       <NuxtLink to="/" class="bg-white px-2 rounded-sm">Mars Rover</NuxtLink>
