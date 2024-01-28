@@ -3,7 +3,7 @@
     <Transition name="loading-page">
       <div
         v-show="!firstPageLoaded"
-        class="h-screen w-screen flex flex-col justify-center items-center bg-black z-20 fixed top-0 left-0 overflow-hidden"
+        class="h-screen w-screen flex flex-col justify-center items-center bg-black z-30 fixed top-0 left-0 overflow-hidden"
       >
         <div class="animate-[bounce_7s_infinite]">
           <NuxtImg src="/img/astronaut.png" width="200px" alt="astronaut" />
