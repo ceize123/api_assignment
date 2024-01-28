@@ -7,11 +7,20 @@ html {
   @apply scroll-smooth;
 }
 
+h1 {
+  @apply md:text-6xl text-4xl font-bold;
+}
+
+h2 {
+  @apply md:text-2xl sm:text-xl text-lg font-bold;
+}
+
 h3 {
-  @apply text-2xl font-bold;
+  @apply md:text-xl text-lg font-bold;
 }
 
 @layer components {
+  /* General */
   .card {
     @apply bg-white rounded-lg;
   }
@@ -20,7 +29,17 @@ h3 {
     @apply hover:text-gray-300 transition-all duration-150;
   }
 
+  /* About Page */
+  .about-block {
+    @apply mb-6;
+  }
+
+  .avatar {
+    @apply rounded-full overflow-hidden h-40 w-40 md:justify-self-end justify-self-center md:mb-0 mb-4;
+  }
+
+  /* Modal */
   .photo-info {
-    @apply flex items-center;
+    @apply flex items-center mb-4;
   }
 }

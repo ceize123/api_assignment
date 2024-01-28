@@ -1,11 +1,11 @@
 <template>
   <LoadingPage :firstPageLoaded="firstPageLoaded" />
-  <div>
+  <main>
     <!-- Hero -->
     <Hero />
 
     <!-- Gallery -->
-    <div class="container mx-auto pt-24" id="gallery">
+    <section class="container mx-auto pt-24" id="gallery">
       <div
         class="grid lg:grid-cols-4 sm:grid-cols-3 gap-5 grid-rows-1 relative xl:mx-8 mx-4 sm:mx-0"
       >
@@ -24,8 +24,8 @@
         <!-- Image Spinner -->
         <Spinner v-if="isLoading" />
       </div>
-    </div>
-  </div>
+    </section>
+  </main>
 </template>
 
 <script setup>

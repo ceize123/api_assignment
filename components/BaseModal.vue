@@ -4,7 +4,7 @@
     <Transition name="modal-outer">
       <div
         v-show="modalActive"
-        class="fixed w-full bg-black bg-opacity-30 h-screen top-0 left-0 flex justify-center z-30"
+        class="fixed w-full bg-black/30 h-screen top-0 left-0 flex justify-center z-30"
       >
         <Transition name="modal-inner">
           <div
@@ -12,7 +12,7 @@
             class="mx-2 p-4 bg-white max-w-screen-md max-h-[96vh] overflow-hidden self-center relative"
           >
             <button
-              class="absolute right-0 top-0 text-white px-3.5 py-1.5 bg-gray-500"
+              class="absolute right-0 top-0 px-3.5 py-1.5 bg-mars-secondary border-2 text-mars-primary"
               @click="$emit('close-modal')"
             >
               X
