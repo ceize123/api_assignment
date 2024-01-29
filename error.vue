@@ -9,7 +9,7 @@
       class="absolute w-full h-full object-cover top-0 -z-10"
     />
     <div class="mt-24 mx-4">
-      <h1 class="border-2 bg-slate-400 w-1/2 mx-auto">
+      <h1 class="border-2 bg-mars-secondary w-1/2 mx-auto">
         {{ error.statusCode }}
       </h1>
       <h1 class="md:text-5xl text-2xl mt-6">
