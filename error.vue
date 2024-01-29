@@ -1,4 +1,5 @@
 <template>
+  <!-- Custom Error Page -->
   <div
     class="h-screen w-screen flex justify-center items-center text-white text-center font-Lexend"
   >
