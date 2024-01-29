@@ -22,7 +22,7 @@ Gallery
 </br>
 Modal
 <div align="center">
-  <img src="./public/img/demo/gallery-desktop.png" alt="Modal" width="600">
+  <img src="./public/img/demo/modal.png" alt="Modal" width="600">
 </div>
 </br>
 
