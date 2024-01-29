@@ -30,7 +30,7 @@
           <div class="relative flex justify-center items-center group">
             <h2 class="relative z-10">Gallery</h2>
             <div
-              class="border-dashed border-2 absolute md:h-40 md:w-40 h-32 w-32 animate-[spin_10s_linear_infinite] group-hover:animate-none group-hover:border-solid group-hover:bg-white rounded-full"
+              class="spin-border group-hover:md:animate-none group-hover:md:border-solid group-hover:md:bg-white"
             ></div>
           </div>
         </NuxtLink>
