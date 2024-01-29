@@ -20,16 +20,25 @@ h3 {
 }
 
 @layer components {
-  /* General */
+  /* General Starts */
   .card {
     @apply bg-white rounded-lg;
   }
 
   .link {
-    @apply hover:text-gray-300 transition-all duration-150;
+    @apply hover:font-bold transition-all duration-150;
   }
 
-  /* About Page */
+  .btn {
+    @apply bg-mars-secondary border-2 px-3.5 py-1.5 text-mars-primary hover:text-white transition-colors duration-300;
+  }
+
+  .spin-border {
+    @apply border-dashed border-2 absolute md:h-40 md:w-40 h-32 w-32 animate-[spin_10s_linear_infinite] rounded-full;
+  }
+  /* General Ends */
+
+  /* About Page Starts */
   .about-block {
     @apply mb-6;
   }
@@ -37,9 +46,11 @@ h3 {
   .avatar {
     @apply rounded-full overflow-hidden h-40 w-40 md:justify-self-end justify-self-center md:mb-0 mb-4;
   }
+  /* About Page Ends */
 
-  /* Modal */
+  /* Modal Starts */
   .photo-info {
-    @apply flex items-center mb-4;
+    @apply flex items-center mb-4 flex-wrap;
   }
+  /* Modal Ends */
 }

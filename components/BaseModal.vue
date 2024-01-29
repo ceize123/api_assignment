@@ -12,7 +12,7 @@
             class="mx-2 p-4 bg-white max-w-screen-md max-h-[96vh] overflow-hidden self-center relative"
           >
             <button
-              class="absolute right-0 top-0 px-3.5 py-1.5 bg-mars-secondary border-2 text-mars-primary"
+              class="absolute right-0 top-0 btn"
               @click="$emit('close-modal')"
             >
               X

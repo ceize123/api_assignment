@@ -1,23 +1,37 @@
 <template>
   <div
-    class="mt-10 sm:max-w-md max-w-sm mx-auto text-center card p-4 [&>p]:md:mt-7 [&>p]:mt-3"
+    class="h-screen w-screen flex justify-center items-center text-white text-center font-Lexend"
   >
-    <p class="md:text-7xl text-5xl font-bold">{{ error.statusCode }}</p>
-    <p class="md:text-6xl text-4xl">Ooooops...</p>
-    <p>
-      <template v-if="error.statusCode === 403">
-        <p class="text-lg">Access is forbidden.</p>
-      </template>
-      <template v-else-if="error.statusCode === 404">
-        <p class="text-lg">The requested resource could not be found.</p>
-      </template>
-      <template v-else-if="error.statusCode === 429">
-        <p class="text-lg">Too many requests. Please try again later.</p>
-      </template>
-      <template v-else>
-        <p class="text-lg">{{ error.message }}</p>
-      </template>
-    </p>
+    <NuxtImg
+      src="/img/error-page.png"
+      placeholder
+      class="absolute w-full h-full object-cover top-0 -z-10"
+    />
+    <div class="mt-24 mx-4">
+      <h1 class="border-2 bg-mars-secondary w-1/2 mx-auto">
+        {{ error.statusCode }}
+      </h1>
+      <h1 class="md:text-5xl text-2xl mt-6">
+        Howdy! Are you lost, space traveler?
+      </h1>
+      <div class="my-6">
+        <template v-if="error.statusCode === 403">
+          <h2>Access is forbidden.</h2>
+        </template>
+        <template v-else-if="error.statusCode === 404">
+          <h2>The requested resource could not be found.</h2>
+        </template>
+        <template v-else-if="error.statusCode === 429">
+          <h2>Too many requests. Please try again later.</h2>
+        </template>
+        <template v-else>
+          <h2>{{ error.message }}</h2>
+        </template>
+      </div>
+      <NuxtLink to="/" class="mt-6">
+        <button class="btn">Go Home</button>
+      </NuxtLink>
+    </div>
   </div>
 </template>
 
