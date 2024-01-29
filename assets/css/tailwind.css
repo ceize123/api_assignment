@@ -26,7 +26,7 @@ h3 {
   }
 
   .link {
-    @apply hover:font-bold transition-all duration-150;
+    @apply hover:md:font-bold transition-all duration-150;
   }
 
   .btn {

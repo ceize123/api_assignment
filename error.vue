@@ -13,7 +13,7 @@
         {{ error.statusCode }}
       </h1>
       <h1 class="md:text-5xl text-2xl mt-6">
-        Howdy! Are you lost, space traveler?
+        Howdy! Space traveler, are you lost?
       </h1>
       <div class="my-6">
         <template v-if="error.statusCode === 403">
