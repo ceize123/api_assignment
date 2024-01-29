@@ -35,19 +35,6 @@
         >
       </p>
     </div>
-    <div>
-      <h2>Journey into the Cosmos: Unveiling Mars Through Photos</h2>
-      <p>
-        Embark on a visual journey with me as we explore Mars through the lens
-        of the Mars Rover. This isn't just a collection of pictures;
-        <span class="text-mars-primary"
-          >it's a curated experience that provides details about each image,
-          including the camera used and the landing date.</span
-        >
-        It's a blend of technology, creativity, and the sheer wonder of our
-        universe.
-      </p>
-    </div>
     <div class="[&>div]:mt-4">
       <h2>Navigating the Challenges: A Developer's Odyssey</h2>
       <p>
