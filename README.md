@@ -8,6 +8,7 @@
 ### Home Page:
 
 **Desktop**
+</br>
 Hero
 
 <div align="center">
@@ -26,6 +27,7 @@ Modal
 </br>
 
 **Mobile**
+</br>
 Hero
 
 <div align="center">
