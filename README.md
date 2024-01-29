@@ -8,6 +8,7 @@
 ### Home Page:
 
 **Desktop**
+</br>
 Hero
 
 <div align="center">
@@ -26,6 +27,7 @@ Modal
 </br>
 
 **Mobile**
+</br>
 Hero
 
 <div align="center">
@@ -41,7 +43,13 @@ Gallery
 ### About Page:
 
 <div align="center">
-  <img src="./public/img/demo/about.png" alt="About Page" width="300">
+  <img src="./public/img/demo/about.png" alt="About Page" width="600">
+</div>
+
+### Error Page:
+
+<div align="center">
+  <img src="./public/img/demo/error.png" alt="Error Page" width="600">
 </div>
 
 ## Nuxt 3 Minimal Starter
