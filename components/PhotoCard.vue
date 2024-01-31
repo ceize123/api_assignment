@@ -17,9 +17,11 @@
       <p class="text-3xl text-mars-primary">See More</p>
     </div>
     <PhotoDetail
+      v-if="modalActive"
       :photo="photo"
       :modalActive="modalActive"
       @close-modal="toggleModal"
+      @handleEscapeKey="handleEscapeKey"
     />
   </div>
 </template>
@@ -31,21 +33,9 @@ const toggleModal = () => {
   modalActive.value = !modalActive.value;
 };
 
-let handleEscapeKey;
-
-onMounted(() => {
-  handleEscapeKey = (event) => {
-    if (event.key === 'Escape') {
-      modalActive.value = false;
-    }
-  };
-
-  window.addEventListener('keydown', handleEscapeKey);
-});
-
-onUnmounted(() => {
-  window.removeEventListener('keydown', handleEscapeKey);
-});
+const handleEscapeKey = () => {
+  modalActive.value = false;
+};
 </script>
 
 <style lang="scss" scoped></style>

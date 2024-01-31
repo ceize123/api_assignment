@@ -26,13 +26,29 @@
 </template>
 
 <script setup>
-defineEmits(['close-modal']);
+const emit = defineEmits(['close-modal', 'handleEscapeKey']);
 
 defineProps({
   modalActive: {
     type: Boolean,
     default: false,
   },
+});
+
+let handleEscapeKey;
+
+onMounted(() => {
+  handleEscapeKey = (event) => {
+    if (event.key === 'Escape') {
+      emit('handleEscapeKey');
+    }
+  };
+
+  window.addEventListener('keydown', handleEscapeKey);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('keydown', handleEscapeKey);
 });
 </script>
 

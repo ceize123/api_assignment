@@ -1,5 +1,9 @@
 <template>
-  <BaseModal :modalActive="modalActive" @close-modal="$emit('close-modal')">
+  <BaseModal
+    :modalActive="modalActive"
+    @close-modal="$emit('close-modal')"
+    @handleEscapeKey="$emit('handleEscapeKey')"
+  >
     <div class="max-w-4/5 max-h-[88vh] overflow-y-auto font-Lexend">
       <div>
         <NuxtImg
@@ -43,7 +47,7 @@
 
 <script setup>
 defineProps(['photo', 'modalActive']);
-defineEmits(['close-modal']);
+defineEmits(['close-modal', 'handleEscapeKey']);
 </script>
 
 <style scoped></style>
