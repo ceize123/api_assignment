@@ -36,10 +36,31 @@ const firstPageLoaded = ref(false);
 const lastPhoto = {};
 
 const fetchPhotos = async () => {
-  isLoading.value = true;
-  const { data } = await useFetch(`/api/nasa/${page.value}`);
-  photos.value = [...photos.value, ...data._rawValue];
-  isLoading.value = false;
+  try {
+    isLoading.value = true;
+    const { data } = await useFetch(`/api/nasa/${page.value}`);
+    if (data) photos.value.push(...data._rawValue);
+  } catch (error) {
+    if (error.response) {
+      const { status } = error.response;
+      if (status === 403) {
+        throw createError({ statusCode: 403, statusMessage: 'Forbidden' });
+      } else if (status === 404) {
+        throw createError({ statusCode: 404, statusMessage: 'Page Not Found' });
+      } else if (status === 429) {
+        throw createError({
+          statusCode: 429,
+          statusMessage: 'Too Many Requests',
+        });
+      }
+    }
+    throw createError({
+      statusCode: 500,
+      statusMessage: 'Internal Server Error',
+    });
+  } finally {
+    isLoading.value = false;
+  }
 };
 
 const handleScroll = () => {
@@ -66,11 +87,13 @@ const checkOnMountedHeight = () => {
   }
 };
 
+// Can't do error handling in mounted hook
+await fetchPhotos();
+
 onMounted(async () => {
   // nextTick waits for the DOM to be updated
   await nextTick();
-  await fetchPhotos();
-  firstPageLoaded.value = true;
+  if (photos.value.length > 0) firstPageLoaded.value = true;
 
   checkOnMountedHeight();
   window.addEventListener('scroll', handleScroll);
