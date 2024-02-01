@@ -17,18 +17,7 @@
         Howdy! Space traveler, are you lost?
       </h1>
       <div class="my-6">
-        <template v-if="error.statusCode === 403">
-          <h2>Access is forbidden.</h2>
-        </template>
-        <template v-else-if="error.statusCode === 404">
-          <h2>The requested resource could not be found.</h2>
-        </template>
-        <template v-else-if="error.statusCode === 429">
-          <h2>Too many requests. Please try again later.</h2>
-        </template>
-        <template v-else>
-          <h2>{{ error.message }}</h2>
-        </template>
+        <h2>{{ error.message }}</h2>
       </div>
       <NuxtLink to="/" class="mt-6">
         <button class="btn">Go Home</button>
