@@ -8,6 +8,7 @@
       alt="mars photo"
       width="360px"
       height="360px"
+      loading="lazy"
       placeholder="/img/space.png"
       class="transition duration-300 ease-in-out relative group-hover:md:blur-sm group-hover:scale-105"
     />

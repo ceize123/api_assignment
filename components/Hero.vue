@@ -9,12 +9,21 @@
       >
         <div class="flex items-end md:gap-6">
           <div class="relative md:w-24 md:inline hidden">
-            <NuxtImg src="/img/hero-graphic1.png" alt="graphic" />
+            <NuxtImg
+              src="/img/hero-graphic1.png"
+              alt="graphic"
+              loading="lazy"
+            />
           </div>
           <h1 class="mb-2">Explore Mars.</h1>
         </div>
         <div class="mt-2 flex gap-2">
-          <NuxtImg src="/img/hero-graphic2.png" alt="graphic" class="w-7" />
+          <NuxtImg
+            src="/img/hero-graphic2.png"
+            alt="graphic"
+            class="w-7"
+            loading="lazy"
+          />
           <div class="bg-white flex items-center justify-center flex-1 px-2">
             <h3>Plan for the Future</h3>
           </div>
@@ -42,12 +51,14 @@
       src="/img/hero-desktop.png"
       alt="hero"
       class="w-full h-full object-cover object-top md:block hidden"
+      loading="lazy"
     />
 
     <NuxtImg
       src="/img/hero-mobile.png"
       alt="hero"
       class="w-full h-full object-cover object-bottom md:hidden"
+      loading="lazy"
     />
   </div>
 </template>

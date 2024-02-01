@@ -11,13 +11,19 @@
           sizes="sm:600px md:80vw"
           :src="photo.img_src"
           placeholder="/img/space.png"
+          loading="lazy"
           alt="mars photo"
         />
       </div>
 
       <!-- Details -->
       <div class="mt-5">
-        <NuxtImg src="/img/arrows.png" alt="arrows" class="w-20" />
+        <NuxtImg
+          src="/img/arrows.png"
+          loading="lazy"
+          alt="arrows"
+          class="w-20"
+        />
         <div class="mt-5 px-2 [&>div]:photo-info [&_h2]:mr-3 [&_p]:md:text-xl">
           <div>
             <h2>Camera:</h2>

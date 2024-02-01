@@ -19,7 +19,9 @@
           <li>Watching sports</li>
         </ul>
       </div>
-      <div class="avatar"><NuxtImg src="/img/avatar.png" alt="avatar" /></div>
+      <div class="avatar">
+        <NuxtImg src="/img/avatar.png" loading="lazy" alt="avatar" />
+      </div>
     </div>
     <div>
       <h2>What to Expect Here: A Unique Blend of Passion</h2>

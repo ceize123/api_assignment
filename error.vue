@@ -6,6 +6,7 @@
     <NuxtImg
       src="/img/error-page.png"
       placeholder
+      loading="lazy"
       class="absolute w-full h-full object-cover top-0 -z-10"
     />
     <div class="mt-24 mx-4">
